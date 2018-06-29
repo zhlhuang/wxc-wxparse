@@ -1,0 +1,20 @@
+<template>
+  <wxc-wxparse text="{{ text }}"></wxc-wxparse>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'wxc-wxparse': 'wxc-wxparse'
+    }
+  },
+  data: { 
+    text:"<b>Hello world</b><img src='http://www.12306.cn/mormhweb/images/noFlashBg.jpg'/>"
+  },
+  methods: { }
+}
+</script>
+
+<style>
+</style>

@@ -1,0 +1,16 @@
+{
+  "name": "wxc-wxparse",
+  "version": "1.0.0",
+  "description": "富文本解析组件 - 小程序组件",
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meili/minui/tree/master/packages/wxc-wxparse"
+  },
+  "author": "",
+  "license": "MIT",
+  "minConfig": {
+    "component": true
+  }
+}

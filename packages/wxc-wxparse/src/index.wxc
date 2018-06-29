@@ -1,0 +1,35 @@
+<template>
+  <view class="wxc-wxparse">
+    <import src="./wxParse/wxParse.wxml" /></import>
+    <view>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+  </view>
+</template>
+<script>
+import WxParse from "./wxParse/wxParse";
+export default {
+  config: {
+    usingComponents: {}
+  },
+  behaviors: [],
+  properties: {
+    text: {
+      type: String,
+      default: "",
+      observer(val) {
+        WxParse.wxParse("article", "html", val, this, 5);
+      }
+    }
+  },
+  data: {},
+  methods: {},
+};
+</script>
+
+<style>
+@import "./wxParse/wxParse.wxss";
+.wxc-wxparse {
+}
+
+</style>
